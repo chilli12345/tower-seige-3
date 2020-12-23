@@ -3,7 +3,7 @@ class Ground {
       var options = {
           isStatic: true
       }
-      this.body = Body.rectangle(x,y,width,height,options);
+      this.body = Bodies.rectangle(x,y,width,height,options);
       this.width = width;
       this.height = height;
       World.add(world, this.body);
@@ -11,7 +11,7 @@ class Ground {
     display(){
       var pos =this.body.position;
       rectMode(CENTER);
-      fill("white");
+      fill("grey");
       rect(pos.x, pos.y, this.width, this.height);
     }
-  }
+  };
